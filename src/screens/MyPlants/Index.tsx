@@ -2,12 +2,13 @@ import React from "react";
 import { Text } from "react-native";
 import {
     Container,
+    TitlePage,
 } from './styles'
 
 export function MyPlants(){
     return(
         <Container>
-            <Text>Tela de listagem de plantas</Text>
+            <TitlePage>Minhas plantas</TitlePage>
         </Container>
     )
 }

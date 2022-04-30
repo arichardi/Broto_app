@@ -7,3 +7,7 @@ export const Container = styled.View`
 
     background-color: ${ ({theme}) => theme.colors.background};
 `;
+
+export const TitlePage = styled.Text`
+    font-family: ${ ({theme}) => theme.fonts.display};
+`;

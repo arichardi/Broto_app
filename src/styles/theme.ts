@@ -13,5 +13,12 @@ export default {
         attention: '#E35C16',
         whites: '#FFFFFF',
 
+    },
+    fonts: {
+        regular: 'Roboto_400Regular',
+        medium: 'Roboto_500Medium',
+        bold: 'Roboto_700Bold',
+        black: 'Roboto_900Black',
+        display: 'YesevaOne_400Regular',
     }
 }
