@@ -1,13 +1,11 @@
 import styled from 'styled-components/native'
 
+export const HeadingContainer = styled.View`
+    width: 80%;
+`;
 export const Container = styled.View`
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-
-    background-color: ${ ({theme}) => theme.colors.background};
+    margin: 50px 16px 16px 16px;
 `;
 
-export const TitlePage = styled.Text`
-    font-family: ${ ({theme}) => theme.fonts.display};
-`;
+
+
