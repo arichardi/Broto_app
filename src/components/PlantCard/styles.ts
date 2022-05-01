@@ -3,15 +3,14 @@ import styled from 'styled-components/native'
 export const Container = styled.View.attrs({
     elevation: 10,
 })`
-    width: 100%;
     height: 59px;
     background-color: ${ ({theme}) => theme.colors.background};
     border-radius: 16px;
-    margin-bottom: 8px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 8px;
+    margin: 0px 8px 8px 8px
 `;
 
 export const PlantImageContainer = styled.View`
@@ -34,6 +33,6 @@ export const PlantDetailsContainer = styled.View`
 
 `;
 
-export const WateryButton = styled.View`
+export const WateryButton = styled.TouchableOpacity`
 
 `;

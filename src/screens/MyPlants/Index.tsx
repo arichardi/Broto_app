@@ -6,7 +6,12 @@ import { PlantCard } from "../../components/PlantCard";
 import {
     Container,
     HeadingContainer,
+    PlantsList,
+    MainButtonContainer,
 } from './styles'
+
+//devlop help extructure
+const plantList = ['1','2','3','4']
 
 export function MyPlants(){
     return(
@@ -16,13 +21,23 @@ export function MyPlants(){
                 <Heading title='Minhas Plantas'/>
             </HeadingContainer>
             
-            <PlantCard 
-                title="Samambinha"
-                subtitle="Primeira Plantinha a chegar"
-                wateryButton={ () => {}}
+            <PlantsList 
+                data={plantList}
+                keyExtractor={ (plant: string) => plant}
+                renderItem={ plant => {
+                    return (
+                        <PlantCard 
+                            title="Samambinha"
+                            subtitle="Primeira Plantinha a chegar"
+                            wateryButton={ () => {}}
+                        />
+                    )
+                }}
             />
 
-            <MainButton onPress={ () => console.log('working') }/>
+            <MainButtonContainer>
+                <MainButton onPress={ () => console.log('working') }/>  
+            </MainButtonContainer>
             </Container>
         </Background>
     )

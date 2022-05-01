@@ -26,7 +26,7 @@ export function PlantCard({title, subtitle, wateryButton}: Props){
                 <PlantName>{title}</PlantName>
                 <PlantSubtitle>{subtitle}</PlantSubtitle>
             </PlantDetailsContainer>
-            <WateryButton>
+            <WateryButton onPress={wateryButton}>
                 <WateryIcon />
             </WateryButton>
         </Container>
